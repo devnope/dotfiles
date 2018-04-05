@@ -6,8 +6,6 @@
 "
 "color
 "
-"colorscheme desert
-"
 " filetype plugins
 "
 filetype plugin on
@@ -141,4 +139,3 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 set statusline+=%#warningmsg#
 set statusline+=%*
-
