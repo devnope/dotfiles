@@ -3,21 +3,21 @@
   become: false
   gather_facts: false
   tasks:
-  - name: copy fb bashrc to all remote hosts
+  - name: copy bashrc to all remote hosts
     copy:
         src: ~/Code/fleetboard/dotfiles/bashrc
         dest: ~/.bashrc
         owner: username
         group: username
         mode: 0644
-  - name: copy fb screenrc to all remote hosts
+  - name: copy screenrc to all remote hosts
     copy:
         src: ~/Code/fleetboard/dotfiles/screenrc
         dest: ~/.screenrc
         owner: username
         group: username
         mode: 0644
-  - name: copy fb vimrc to all remote hosts
+  - name: copy vimrc to all remote hosts
     copy:
         src: ~/Code/fleetboard/dotfiles/vimrc
         dest: ~/.vimrc
