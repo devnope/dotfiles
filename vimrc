@@ -6,22 +6,32 @@
 "
 "color
 "
+"colorscheme desert
+"
 " filetype plugins
 "
 filetype plugin on
-filetype indent on
+set nocompatible | filetype indent plugin on | syn on
 
 "
 " autoread when the file changes 
 "
 "w many tenths of a second to blink when matching brackets
-"set mat=2
+set mat=2
 "
 "" No annoying sound on errors
 set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
+
+set path+=**
+set wildmenu
+"
+" autoread when the file changes 
+"
+"w many tenths of a second to blink when matching brackets
+set mat=2
 
 " Add a bit extra margin to the left
 set foldcolumn=1
@@ -139,3 +149,12 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 set statusline+=%#warningmsg#
 set statusline+=%*
+
+"""""""""""
+"  NetRW  "
+"""""""""""
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 85
